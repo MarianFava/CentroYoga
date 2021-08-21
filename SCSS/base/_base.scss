@@ -1,0 +1,22 @@
+* {margin:0;
+    padding:0;
+    box-sizing: initial;
+ 
+ }
+ .body{
+    font-family: $fuentes;
+    
+}
+/*Párrafos*/
+p { font-family: $fuentes;
+    color: $color-letraprimario;
+    font-weight: bold;
+    font-size: nth($font-size,1);
+   
+}  
+h2 {
+    font-weight: 400;
+}
+hr{
+    margin: 0px;
+}

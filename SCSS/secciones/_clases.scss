@@ -1,0 +1,63 @@
+/*Html Clases*/
+
+
+.container {
+    margin: 0 auto;
+    width: 90%;
+}
+.flex{
+    display: flex;
+}
+.text-center{
+    text-align: center;
+}
+.columna {
+    background: $color-columna;
+    color: $color-tipogclases;
+    border: 3px solid $color-bordercolumn;
+    margin:30px 10px 60px 10px;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 10px 10px $color-boxshadow;
+    width: 100%;
+}
+.precio{
+    font-size: nth($font-size,4);
+   /* font-size: 50px;*/
+    color: $color-precios;
+}
+.btn-precio{
+    background: $color-letraprimario;
+    cursor:grab;
+    display: block;
+    padding: 10px;
+    color: $color-columna;
+    text-decoration: none;
+    /*border-radius: 3px;*/
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    transition: all 1s;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19),
+    0 6px 6px rgba(0, 0, 0, 0.23);
+}
+.btn:after, .btn:before {
+    content:"";
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    border: 0px solid #fff;
+    transition: all 1s;
+}
+.btn-precio:hover {
+    background: $color-hover;
+}
+/*Responsive*/
+@media only screen and (max-width: 425px) {
+    .container{
+        width: 50%;
+        grid-template-columns: 1fr;
+        display: grid;
+ }
+}

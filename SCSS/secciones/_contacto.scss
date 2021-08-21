@@ -1,0 +1,102 @@
+/* Html Contacto*/
+.sectionContacto{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 60px;
+    min-height: 500px;
+}
+p.cont_1 {
+   padding-top: 15px;
+}
+p.cont_2{
+    color: $color-contactotipog;
+    opacity: 50%;
+    text-transform: uppercase;
+    padding-top: 10px;
+    text-decoration:underline;
+}
+p.cont_3 {
+      color: $color-contactotipog;
+      padding-top: 10px;
+}
+.img-contacto{
+    width: 450px;
+    height: 250px;
+    opacity: 70%;
+    border-radius: 15px;
+}
+
+.wrapper {
+    height: 60px;
+    width: 400px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.wrapper .field{
+    height: 100%;
+    width: 0%;
+    opacity: 0;
+    pointer-events: none;
+    position: relative;
+    transition: 0.4s cubic-bezier(0.68,-0.55,0.265,1.55);
+}
+#click:checked ~ .field{
+    width: 100%;
+    opacity: 1;
+    pointer-events: auto;
+}
+.wrapper .field input{
+    height: 100%;
+    width: 100%;
+    border: 2px solid $color-acccollapsed;
+    border-radius: 5px;
+    padding: 0 130px 0 15px;
+    font-size: 20px;
+    outline: none;
+    box-shadow: 5px 5px 30px rgba(0,0,0,.2);
+}
+.wrapper .field input::placeholder{
+    color:$color-letraprimario;
+    font-size: 18px;
+}
+.wrapper .field .btnButton{
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    font-size: 16px;
+    color: $color-boxshadow;
+    line-height: 40px;
+    background: $color-acccollapsed;
+    height: 40px;
+    width: 100px;
+    user-select: none;
+    border-radius: 5px;
+    cursor: grab;
+    transition: all 0.3s ease;
+}
+.wrapper .field .btnButton:active{
+    transform: translateY(-50%) scale(0.9);
+}
+.wrapper .btnLabel{
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    color: $color-boxshadow;
+    background: $color-acccollapsed;
+    line-height: 60px;
+    font-size: 27px;
+    font-weight: 500;
+    border-radius: 5px;
+    user-select: none;
+    cursor: grab;
+    box-shadow: 5px 5px 30px rgba(0,0,0,.2);
+    transition: 0.4s
+    cubic-bezier(0.68,-0.55,0.265,1.55);
+}
+.wrapper .btnLabel:active{
+    transform: scale(0.9);
+}

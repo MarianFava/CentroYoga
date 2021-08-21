@@ -1,0 +1,16 @@
+/*Html Staff*/
+.fotoStaff {
+    border-radius: 15%;
+    width:250px;
+    height:220px;
+    transition: width 2s, height 2s, transform 2s;
+}
+.fotoStaff:hover {
+    width: 350px;
+    height: 320px;
+    transform: rotate(360deg);
+}
+/*Mixin*/
+#staffStyle{
+    @include boxes (flex, space-around, 25px);
+}

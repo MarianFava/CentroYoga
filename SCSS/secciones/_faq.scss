@@ -1,0 +1,24 @@
+/* Html FAQ*/
+#faqSection h3,#faqSection {
+
+    margin-bottom: 10px;
+    padding-top: 10px;
+}
+.accColor , .collapsed { font-family: $fuentes;
+    color: $color-letraprimario;
+    font-weight: bold;
+    font-size: nth($font-size,1);
+    background-color: $color-acccollapsed;
+    border: none;
+}
+.accBody  {
+    background-color: $color-bgfaq;
+    color: $color-tipografia;
+}
+.accordion-button-active-color{
+    background-color: $color-bgfaq;
+}
+
+.footer-faq{
+    padding-top: 90px;
+}

@@ -1,0 +1,27 @@
+/*Inicio Main*/
+main { 
+    background-color:$color-bgmain;
+    background-position: center;
+    background-size: contain; 
+    padding-bottom: 15px;
+    font-weight: bold;
+}
+.pIndex{
+    color:$color-tipografia ;
+    font-size: 20px;
+    padding-top:0px;
+}
+h1 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color:$color-letraprimario;
+    text-shadow: 2px 2px $color-precios;
+    text-align: center;
+    font-size: 60px;
+    border-width: 3px;
+    margin-bottom: 50px;
+}
+
+h3 { text-decoration: underline;
+    font-size: nth($font-size,5);
+} 

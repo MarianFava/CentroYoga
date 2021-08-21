@@ -1,0 +1,6 @@
+@mixin boxes ($display , $justify ,$top: 0px) {
+    display:$display;
+    justify-content: $justify;
+    margin-top: $top;
+
+}
