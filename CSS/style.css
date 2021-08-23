@@ -201,6 +201,7 @@ h3 {
   margin-right: auto;
   margin-bottom: 10px;
   border-radius: 15%;
+  overflow: hidden;
 }
 
 /*Transitions and transforms*/
