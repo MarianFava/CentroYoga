@@ -631,9 +631,22 @@ span {
 }
 
 footer {
-  /*background-size: contain;*/
+  display: grid;
   height: 25vh;
   background-image: linear-gradient(#fcf3ca, #B2AB8C);
+}
+
+.p-footer {
+  text-decoration: none;
+  color: #3d3c3c;
+  font-weight: lighter;
+  text-shadow: 1px 1px #B2AB8C;
+  text-align: center;
+}
+
+.audioFooter {
+  width: 20%;
+  height: 18px;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -4,11 +4,9 @@
     width:auto;
     border-color: $color-letraprimario;
 }
-
 #redes {
     display: flex;
     justify-content: flex-end;
-    
 }
 .iconRedes{
    list-style: none;
@@ -22,7 +20,18 @@
     transform: scale(1.3)
 }
 footer {
-    /*background-size: contain;*/ 
+    display: grid;
     height: 25vh;
     background-image: linear-gradient($color-bgmain,$color-acccollapsed);
+}
+.p-footer{
+    text-decoration: none;
+    color: $color-tipografia;
+    font-weight: lighter;
+    text-shadow: 1px 1px $color-acccollapsed;
+    text-align: center;
+}
+.audioFooter{
+    width: 20%;
+    height: 18px;
 }
