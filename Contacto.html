@@ -73,21 +73,72 @@
 
         </section>
         <h1 class="animate__animated animate__heartBeat">Contáctanos</h1>
+        <!--Inicio formulario de contacto-->
         <section class="sectionContacto">
-            <div>
-                <p class="cont_1">Si tenés dudas o querés más información acerca de nuestras clases, <br> contactanos
-                    por los siguientes canales:</p>
-                <p class="cont_2">Centro Integral de Yoga Ciudadela</p>
-                <p class="cont_3">Telefono: +54 9 11 7360-9007</p>
-                <p class="cont_3">Mail: michellefava90@gmail.com </p>
-                <p class="cont_3">Instagram: @centrodeyogaciudadela</p>
-                <p class="cont_3">Facebook: Centro de Yoga Ciudadela</p>
-            </div>
-            <div>
-                <img class="img-contacto" src="./media/YogaGrupo.jpg" alt="YogaGrupo">
-            </div>
-        </section>
 
+            <div class="contact_form">
+
+                <div class="formulario">
+
+                    <h3>Escribinos y en breve nos contactamos con vos.</h3>
+
+                    <form action="submeter-formulario.php" method="post">
+
+                        <p>
+                            <label for="nombre" class="colocar_nombre">Nombre
+                                <span class="obligatorio">*</span>
+                            </label>
+                            <input type="text" name="introducir_nombre" id="nombre" required="obligatorio"
+                                placeholder="Escribí tu nombre">
+                        </p>
+
+                        <p>
+                            <label for="email" class="colocar_email">Email
+                                <span class="obligatorio">*</span>
+                            </label>
+                            <input type="email" name="introducir_email" id="email" required="obligatorio"
+                                placeholder="Escribí tu Email">
+                        </p>
+
+                        <p>
+                            <label for="telefone" class="colocar_telefono">Teléfono
+                            </label>
+                            <input type="tel" name="introducir_telefono" id="telefono"
+                                placeholder="Escribí tu teléfono">
+                        </p>
+
+
+                        <p>
+                            <label for="asunto" class="colocar_asunto">Asunto
+                                <span class="obligatorio">*</span>
+                            </label>
+                            <input type="text" name="introducir_asunto" id="assunto" required="obligatorio"
+                                placeholder="Escribí un asunto">
+                        </p>
+
+                        <p>
+                            <label for="mensaje" class="colocar_mensaje">Mensaje
+                                <span class="obligatorio">*</span>
+                            </label>
+                            <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje"
+                                required="obligatorio" placeholder="Dejá acá tu consulta..."></textarea>
+                        </p>
+
+                        <button type="submit" name="enviar_formulario" id="enviar">
+                            <p>Enviar</p>
+                        </button>
+
+                        <p class="aviso">
+                            <span class="obligatorio"> * </span>los campos son obligatorios.
+                        </p>
+
+                    </form>
+                </div>
+            </div>
+
+        </section>
+        <!--Fin formulario de contacto-->
+        <!--Inicio suscribete-->
         <section>
             <div class="wrapper">
                 <input type="checkbox" id="click">
@@ -99,6 +150,7 @@
                 </div>
             </div>
         </section>
+        <!--Fin suscribete-->
     </main>
 
 

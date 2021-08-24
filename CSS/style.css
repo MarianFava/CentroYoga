@@ -334,10 +334,10 @@ h3 {
   background: beige;
   color: #333;
   border: 3px solid #fb9797;
-  margin: 30px 10px 60px 10px;
+  margin: 30px 20px 60px 10px;
   padding: 30px;
   border-radius: 5px;
-  box-shadow: 10px 10px #f1b6b6;
+  box-shadow: 20px 20px 10px #f1b6b6;
   width: 100%;
 }
 
@@ -408,21 +408,119 @@ p.dire-aruy {
   min-height: 500px;
 }
 
-p.cont_1 {
+/*p.cont_1 {
+   padding-top: 15px;
+}
+p.cont_2{
+    color: $color-contactotipog;
+    opacity: 50%;
+    text-transform: uppercase;
+    padding-top: 10px;
+    text-decoration:underline;
+}
+p.cont_3 {
+      color: $color-contactotipog;
+      padding-top: 10px;
+}*/
+/*Formulario de contacto*/
+.contact_form {
+  width: 460px;
+  height: auto;
+  margin: 0 auto 10px auto;
+  border-radius: 10px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  background-color: #F4C7AB;
+  padding-left: 30px;
+}
+
+input {
+  background-color: #fbfbfb;
+  width: 408px;
+  height: 40px;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 3px;
+  border-color: #B2AB8C;
+  margin-top: 10px;
+  padding-left: 10px;
+  margin-bottom: 20px;
+}
+
+textarea {
+  background-color: #fbfbfb;
+  width: 405px;
+  height: 150px;
+  border-radius: 5px;
+  border-style: 3px solid;
+  border-width: 3px;
+  border-color: #B2AB8C;
+  margin-top: 10px;
+  padding-left: 10px;
+  margin-bottom: 20px;
   padding-top: 15px;
 }
 
-p.cont_2 {
-  color: black;
-  opacity: 50%;
-  text-transform: uppercase;
-  padding-top: 10px;
-  text-decoration: underline;
+label {
+  display: block;
+  float: center;
 }
 
-p.cont_3 {
-  color: black;
-  padding-top: 10px;
+button {
+  height: 45px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  text-transform: uppercase;
+  background-color: #ab4493;
+  border-color: #ab4493;
+  border-style: 3px solid;
+  border-radius: 10px;
+  width: 420px;
+  cursor: pointer;
+}
+
+button p {
+  color: #fff;
+}
+
+span {
+  color: #ab4493;
+}
+
+.aviso {
+  font-size: 13px;
+  color: #3d3c3c;
+}
+
+h3 {
+  font-size: 16px;
+  padding-bottom: 30px;
+  color: #333;
+}
+
+p {
+  font-size: 14px;
+  color: #333;
+}
+
+::-webkit-input-placeholder {
+  color: #a8a8a8;
+}
+
+::-webkit-textarea-placeholder {
+  color: #a8a8a8;
+}
+
+.formulario input:focus {
+  outline: 0;
+  border: 3px solid slateblue;
+}
+
+.formulario textarea:focus {
+  outline: 0;
+  border: 3px solid slateblue;
 }
 
 .img-contacto {
