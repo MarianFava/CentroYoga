@@ -70,7 +70,7 @@ p.cont_3 {
     margin-bottom: 20px; 
     margin-top: 10px;   
     text-transform: uppercase;
-    background-color: #ab4493; 
+    background-color: $color-acccollapsed; 
     border-color: #ab4493; 
     border-style: 3px solid; 
     border-radius: 10px;  
@@ -91,13 +91,13 @@ p.cont_3 {
     color: #3d3c3c;  
   }
   
-  h3{
+  .h3Contacto{
     font-size: 16px; 
     padding-bottom: 30px;
     color: #333;   
   }
   
-  p{
+  .párrafoFormulario{
     font-size: 14px; 
     color: #333; 
   }
@@ -119,12 +119,6 @@ p.cont_3 {
     outline:0;
     border: 3px solid slateblue;
   }
-.img-contacto{
-    width: 450px;
-    height: 250px;
-    opacity: 70%;
-    border-radius: 15px;
-}
 
 .wrapper {
     height: 60px;
