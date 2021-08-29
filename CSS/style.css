@@ -62,7 +62,7 @@ nav {
 
 .ul1 {
   display: flex;
-  justify-content: right;
+  justify-content: end;
   box-sizing: unset;
 }
 
@@ -95,6 +95,11 @@ nav {
 }
 
 /*Responsive*/
+@media only screen and (max-width: 280px) {
+  .ul1 {
+    display: grid;
+  }
+}
 @media only screen and (max-width: 425px) {
   .ul1 {
     display: grid;
@@ -226,6 +231,32 @@ h3 {
 }
 
 /*Responsive*/
+@media only screen and (max-width: 280px) {
+  .asanas {
+    grid-template-columns: 1fr;
+    display: grid;
+  }
+
+  .imgSection {
+    height: 150px;
+    width: 25%;
+    display: block;
+    margin: auto;
+  }
+}
+@media only screen and (max-width: 360px) {
+  .asanas {
+    grid-template-columns: 1fr;
+    display: grid;
+  }
+
+  .imgSection {
+    height: 200px;
+    width: 35%;
+    display: block;
+    margin: auto;
+  }
+}
 @media only screen and (max-width: 425px) {
   .asanas {
     grid-template-columns: 1fr;
