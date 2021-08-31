@@ -2,7 +2,7 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: initial;
+  box-sizing: border-box;
 }
 
 .body {
@@ -54,31 +54,21 @@ header {
   transform: scale(1.3);
 }
 
-nav {
-  width: 75%;
-  float: right;
-  margin: 10px;
-}
-
-.ul1 {
+.contenedorNavbar {
   display: flex;
-  justify-content: end;
-  box-sizing: unset;
+  float: right;
 }
 
-.ul1 li {
-  list-style: none;
-  margin: 15px;
-}
-
-.botonMenu {
+.boton {
   padding: 10px;
+  margin: 10px;
   border-radius: 10px;
-  height: 20px;
-  width: 70px;
+  border: none;
+  height: 50px;
+  width: 100px;
   display: inline-block;
   color: #3d3c3c;
-  font-size: medium;
+  justify-content: end;
   background-color: #F4C7AB;
   text-decoration: none;
   text-align: center;
@@ -87,27 +77,91 @@ nav {
   transition: 0.7s ease-out;
 }
 
-.botonMenu:hover {
-  background: slateblue;
-  /*Transformaciones*/
+.boton:hover {
+  background-color: #8b56c0;
   -webkit-transform: scale(1.3);
   transform: scale(1.3);
 }
 
-/*Responsive*/
-@media only screen and (max-width: 280px) {
+/*Responsive Header*/
+@media only screen and (max-width: 320px) {
+  header {
+    width: 100vh;
+  }
+
   .ul1 {
     display: grid;
+  }
+
+  .imagenLogo {
+    display: flex;
+    justify-content: left;
+    width: 75px;
+    height: 50px;
+    margin-left: 5px;
+    margin-top: 5px;
+  }
+
+  button.navbar-toggler {
+    width: auto !important;
+  }
+}
+@media only screen and (max-width: 375px) {
+  header {
+    width: 125vh;
+  }
+
+  .ul1 {
+    display: grid;
+  }
+
+  .imagenLogo {
+    display: flex;
+    justify-content: left;
+    width: 85px;
+    height: 60px;
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+
+  button.navbar-toggler {
+    width: auto !important;
   }
 }
 @media only screen and (max-width: 425px) {
+  header {
+    width: 125vh;
+  }
+
   .ul1 {
     display: grid;
   }
+
+  .imagenLogo {
+    display: flex;
+    justify-content: left;
+    width: 100px;
+    height: 75px;
+    margin-left: 15px;
+    margin-top: 15px;
+  }
+
+  button.navbar-toggler {
+    width: auto !important;
+  }
 }
 @media only screen and (max-width: 768px) {
-  .ul1 {
-    display: grid;
+  .imagenLogo {
+    display: flex;
+    justify-content: left;
+    width: 150px;
+    height: 125px;
+    margin-left: 20px;
+    margin-top: 20px;
+  }
+
+  button.navbar-toggler {
+    width: auto !important;
   }
 }
 @media only screen and (max-width: 1024px) {
@@ -147,6 +201,49 @@ h3 {
   font-size: 30px;
 }
 
+/*Responsive*/
+@media only screen and (max-width: 320px) {
+  main {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .asanas {
+    grid-template-columns: 1fr 1fr;
+    display: grid;
+  }
+
+  .imgSection {
+    height: 200px;
+    width: 200px;
+    display: block;
+    margin: auto;
+  }
+
+  .imgPosturas {
+    height: 200px;
+    width: auto;
+  }
+}
+@media only screen and (max-width: 425px) {
+  main {
+    width: 85%;
+  }
+
+  h1 {
+    font-size: 45px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  main {
+    width: 95vh;
+  }
+}
 /*Estilos Home*/
 .p-filosofia {
   font-weight: bold;
@@ -177,9 +274,9 @@ h3 {
 
 .listSection {
   text-shadow: 2px 2px 5px #d83a56;
-  margin-left: 10px;
+  /*margin-left: 10px;
   margin-top: 60px;
-  width: 60%;
+  width: 60%;*/
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-size: 25px;
   padding-left: 35px;
@@ -213,8 +310,7 @@ h3 {
 .imgPosturas {
   border-radius: 15%;
   object-fit: cover;
-  width: 400px;
-  height: 266px;
+  width: 100%;
   filter: grayscale(100%);
   transition: all 0.3s;
 }
@@ -231,16 +327,22 @@ h3 {
 }
 
 /*Responsive*/
-@media only screen and (max-width: 280px) {
+@media only screen and (max-width: 320px) {
+  .body {
+    background-size: cover;
+  }
+
+  .sectionContent {
+    display: block;
+  }
+
   .asanas {
     grid-template-columns: 1fr;
     display: grid;
   }
 
   .imgSection {
-    height: 150px;
-    width: 25%;
-    display: block;
+    width: 100%;
     margin: auto;
   }
 }
@@ -265,20 +367,30 @@ h3 {
 
   .imgSection {
     height: 250px;
-    width: 50%;
     display: block;
     margin: auto;
   }
 }
 @media only screen and (max-width: 768px) {
+  .prueba {
+    padding-left: 2em;
+  }
+
+  .sectionContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
   .asanas {
-    grid-template-columns: 2fr;
+    grid-template-columns: 1fr 1fr;
     display: grid;
   }
 
   .imgSection {
-    height: 280px;
-    width: 85%;
+    /*height: 280px;*/
+    width: 65%;
     display: grid;
     margin: auto;
     object-fit: cover;
@@ -292,9 +404,9 @@ h3 {
 
   .imgSection {
     height: 350px;
-    width: 100%;
-    display: grid;
-    margin: auto;
+    width: 250px;
+    /*display: grid;
+    margin: auto;*/
     object-fit: cover;
   }
 }
@@ -637,6 +749,7 @@ span {
 #redes {
   display: flex;
   justify-content: flex-end;
+  padding-left: 0;
 }
 
 .iconRedes {
@@ -669,6 +782,24 @@ footer {
 .audioFooter {
   width: 20%;
   height: 18px;
+}
+
+/*Responsive Footer*/
+@media only screen and (max-width: 360px) {
+  #redes {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  footer {
+    flex-direction: column;
+    width: 95%;
+  }
+
+  .iconRedes {
+    width: 20px;
+    height: 20px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

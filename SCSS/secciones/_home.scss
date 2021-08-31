@@ -23,9 +23,9 @@
 }
 .listSection {
     text-shadow: 2px 2px 5px $color-letraprimario;
-    margin-left: 10px;
+    /*margin-left: 10px;
     margin-top: 60px;
-    width: 60%;
+    width: 60%;*/
     font-family: $fuentes;
     font-size: nth($font-size,6);
     padding-left: 35px;
@@ -55,9 +55,7 @@
 .imgPosturas {
     border-radius: 15%;
     object-fit: cover;
-    width: 400px;
-    height: 266px;
-    
+    width: 100%;
     filter: grayscale(100%);
     transition: all 0.3s;
 
@@ -74,31 +72,33 @@
 
 /*Responsive*/
 
-@media only screen and (max-width: 280px) {
+@media only screen and (max-width: 320px) {
+    .body{
+        background-size: cover;
+    }
+    .sectionContent{
+        display: block;
+    }
     .asanas {
         grid-template-columns: 1fr;
         display: grid;
- }
+    }
    .imgSection{
-    height: 150px;                    
-    width: 25%;
-    display: block;
+    width: 100%;
     margin: auto;
-}
-
+   }
 }
 @media only screen and (max-width: 360px) {
     .asanas {
         grid-template-columns: 1fr;
         display: grid;
- }
+    }
    .imgSection{
     height: 200px;                    
     width: 35%;
     display: block;
     margin: auto;
-}
-
+   }
 }
 @media only screen and (max-width: 425px) {
     
@@ -108,22 +108,28 @@
     }
     .imgSection{
            height: 250px;                    
-           width: 50%;
            display: block;
            margin: auto;
     }
     
 }
 @media only screen and ( max-width :768px) {
-    
+    .prueba{
+        padding-left: 2em;
+    }
+    .sectionContent{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
     .asanas {
-           grid-template-columns: 2fr;
+           grid-template-columns: 1fr 1fr;
            display: grid;
     }
-
     .imgSection{
-           height: 280px;
-           width: 85%;
+           /*height: 280px;*/
+           width: 65%;
            display: grid;
            margin: auto;
            object-fit: cover;
@@ -137,9 +143,9 @@
     }
     .imgSection{
            height: 350px;
-           width: 100%;
-           display: grid;
-           margin: auto;
+           width: 250px;
+           /*display: grid;
+           margin: auto;*/
            object-fit: cover;
     }
 }

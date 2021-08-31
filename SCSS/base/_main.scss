@@ -21,7 +21,47 @@ h1 {
     border-width: 3px;
     margin-bottom: 50px;
 }
-
 h3 { text-decoration: underline;
     font-size: nth($font-size,5);
 } 
+/*Responsive*/
+@media only screen and (max-width: 320px){
+    main {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    h1{
+        font-size: 30px;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .asanas {
+        grid-template-columns: 1fr 1fr;
+        display: grid;
+      }
+      .imgSection {
+        height: 200px;
+        width: 200px;
+        display: block;
+        margin: auto;
+      }
+      .imgPosturas{
+        height: 200px;
+        width: auto;
+      }
+}
+@media only screen and (max-width: 425px) {
+    main{
+        width: 85%;
+    }
+    h1{
+        font-size: 45px;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    main{
+        width: 95vh;
+    }
+}

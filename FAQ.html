@@ -40,30 +40,44 @@
     <!--Inicio header-->
     <header>
 
-        <img class="imagenLogo" src="./media/Fondonuevo.png" alt="header">
-        <nav>
-            <!--Botones del nav-->
-            <ul class="nav ul1 justify-content-end">
-                <li class="nav-item ">
-                    <a class="nav-link botonMenu" href="index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link botonMenu" href="Staff.html">Staff</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link botonMenu" href="FAQ.html">FAQ</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link botonMenu" href="clases.html">Clases</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link botonMenu" href="Sedes.html">Sedes</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link botonMenu" href="Contacto.html">Contacto</a>
-                </li>
-            </ul>
-        </nav>
+        <a href="index.html">
+
+            <img class="imagenLogo" src="./media/Fondonuevo.png" alt="imagenHeader">
+        </a>
+
+        <!--Botones del nav-->
+        <div class="contenedorNavbar">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li> <a class="btn btn-secondary boton" type="button" href="INDEX.html">HOME</a>
+                            </li>
+
+                            <li> <a class="btn btn-secondary boton" type="button" href="Staff.html">STAFF</a>
+                            </li>
+
+                            <li> <a class="btn btn-secondary boton" type="button" href="FAQ.html">FAQs</a>
+                            </li>
+
+                            <li> <a class="btn btn-secondary boton" type="button" href="clases.html">CLASES</a>
+                            </li>
+
+                            <li> <a class="btn btn-secondary boton" type="button" href="Sedes.html">SEDES</a>
+                            </li>
+
+                            <li> <a class="btn btn-secondary boton" type="button" href="Contacto.html">CONTACTO</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
     </header>
     <!--Fin header-->
     <!--Inicio Main-->
@@ -129,7 +143,7 @@
             <div class="card cardStyle" style="width: 18rem;">
                 <div class="card-body cardStyle">
                     <h5 class="card-title"> ¿Cuáles son los beneficios del yoga?</h5>
-                    <p class="card-text"> Estabiliza la presión sanguínea, incrementa la flexibilidad, el
+                    <p class="card-text"> Estabiliza la presión, incrementa la flexibilidad, el
                         balance, la tonificación muscular,facilita la digestión, mejora la postura
                         y disminuye los dolores de espalda, por mencionar algunos.</p>
                 </div>
