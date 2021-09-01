@@ -151,6 +151,10 @@ header {
   }
 }
 @media only screen and (max-width: 768px) {
+  header {
+    width: 150vh;
+  }
+
   .imagenLogo {
     display: flex;
     justify-content: left;
@@ -206,6 +210,7 @@ h3 {
   main {
     display: flex;
     flex-wrap: wrap;
+    width: 100vh;
   }
 
   h1 {
@@ -241,7 +246,7 @@ h3 {
 }
 @media only screen and (max-width: 768px) {
   main {
-    width: 95vh;
+    width: 111vh;
   }
 }
 /*Estilos Home*/
@@ -310,7 +315,7 @@ h3 {
 .imgPosturas {
   border-radius: 15%;
   object-fit: cover;
-  width: 100%;
+  width: 400px;
   filter: grayscale(100%);
   transition: all 0.3s;
 }
@@ -384,8 +389,8 @@ h3 {
   }
 
   .asanas {
-    grid-template-columns: 1fr 1fr;
     display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 
   .imgSection {
@@ -450,6 +455,28 @@ h3 {
   box-shadow: 10px 10px 10px #F4C7AB;
 }
 
+@media only screen and (max-width: 376px) {
+  .cardsFaqs {
+    display: block;
+    /*grid-template-columns: 1fr;
+
+    grid-row-gap: 10px;*/
+    margin-left: 20px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .cardsFaqs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-row-gap: 10px;
+    margin-left: 20px;
+  }
+
+  .card-body {
+    height: 260px;
+  }
+}
 /*Html Clases*/
 .container {
   margin: 0 auto;
@@ -542,20 +569,6 @@ p.dire-aruy {
   min-height: 500px;
 }
 
-/*p.cont_1 {
-   padding-top: 15px;
-}
-p.cont_2{
-    color: $color-contactotipog;
-    opacity: 50%;
-    text-transform: uppercase;
-    padding-top: 10px;
-    text-decoration:underline;
-}
-p.cont_3 {
-      color: $color-contactotipog;
-      padding-top: 10px;
-}*/
 /*Formulario de contacto*/
 .contact_form {
   width: 460px;
@@ -794,6 +807,39 @@ footer {
   footer {
     flex-direction: column;
     width: 95%;
+  }
+
+  .iconRedes {
+    width: 20px;
+    height: 20px;
+  }
+}
+@media only screen and (max-width: 425px) {
+  #redes {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  footer {
+    flex-direction: column;
+    width: 100vh;
+  }
+
+  .iconRedes {
+    width: 20px;
+    height: 20px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  #redes {
+    display: flex;
+    /* justify-content:space-between;*/
+    margin-right: 25px;
+  }
+
+  footer {
+    flex-direction: column;
+    width: 112vh;
   }
 
   .iconRedes {

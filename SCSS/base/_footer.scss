@@ -52,3 +52,34 @@ footer {
         height: 20px;
     }
 }
+@media only screen and (max-width: 425px){
+    
+    #redes{
+        display: flex;
+        justify-content:space-between;
+    }
+    footer{
+        flex-direction: column;
+        width: 100vh;
+    }
+    .iconRedes{
+        width:20px;
+        height: 20px;
+    }
+}
+@media only screen and (max-width: 768px){
+    
+    #redes{
+        display: flex;
+       /* justify-content:space-between;*/
+       margin-right: 25px;
+    }
+    footer{
+        flex-direction: column;
+        width: 112vh;
+    }
+    .iconRedes{
+        width:20px;
+        height: 20px;
+    }
+}

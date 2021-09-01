@@ -55,7 +55,7 @@
 .imgPosturas {
     border-radius: 15%;
     object-fit: cover;
-    width: 100%;
+    width: 400px;
     filter: grayscale(100%);
     transition: all 0.3s;
 
@@ -83,10 +83,10 @@
         grid-template-columns: 1fr;
         display: grid;
     }
-   .imgSection{
-    width: 100%;
-    margin: auto;
-   }
+    .imgSection{
+       width: 100%;
+       margin: auto;
+    }
 }
 @media only screen and (max-width: 360px) {
     .asanas {
@@ -124,8 +124,9 @@
         flex-direction: column;
     }
     .asanas {
-           grid-template-columns: 1fr 1fr;
-           display: grid;
+        display: grid;   
+        grid-template-columns: 1fr 1fr;
+           
     }
     .imgSection{
            /*height: 280px;*/

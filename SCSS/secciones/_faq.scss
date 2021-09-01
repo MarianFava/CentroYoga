@@ -17,3 +17,25 @@
     border-radius: 15px;
     box-shadow: 10px 10px 10px  $color-bgbotonesnav;
 }
+@media only screen and (max-width: 376px) {
+    .cardsFaqs{
+        display:block;
+        /*grid-template-columns: 1fr;
+        
+        grid-row-gap: 10px;*/
+        margin-left: 20px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .cardsFaqs{
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-row-gap: 10px;
+        margin-left: 20px;
+    }
+    .card-body{
+        height: 260px;
+    }
+    
+}
