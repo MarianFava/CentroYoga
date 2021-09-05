@@ -7,10 +7,14 @@
     margin-left: 30px;
 }
 
-
-.card-body{
+.card{
     background: $color-acccollapsed;
     height: 270px;
+    transition: all 0.3s;
+}
+.card:hover {
+    transition: all 0.3s;
+    transform: scale(1.1);
 }
 
 .cardStyle{

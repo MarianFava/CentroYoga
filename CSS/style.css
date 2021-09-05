@@ -179,6 +179,7 @@ main {
   background-color: #fcf3ca;
   background-position: center;
   background-size: contain;
+  padding-left: 10px;
   padding-bottom: 15px;
   font-weight: bold;
 }
@@ -445,9 +446,15 @@ h3 {
   margin-left: 30px;
 }
 
-.card-body {
+.card {
   background: #B2AB8C;
   height: 270px;
+  transition: all 0.3s;
+}
+
+.card:hover {
+  transition: all 0.3s;
+  transform: scale(1.1);
 }
 
 .cardStyle {
