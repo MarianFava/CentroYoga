@@ -31,6 +31,13 @@ header {
   background-image: linear-gradient(#B2AB8C, #fcf3ca);
 }
 
+.pIndex {
+  color: #3d3c3c;
+  font-size: 18px;
+  padding-top: 0px;
+  text-decoration: none;
+}
+
 .imagenLogo {
   display: flex;
   justify-content: left;
@@ -179,15 +186,8 @@ main {
   background-color: #fcf3ca;
   background-position: center;
   background-size: contain;
-  padding-left: 10px;
   padding-bottom: 15px;
   font-weight: bold;
-}
-
-.pIndex {
-  color: #3d3c3c;
-  font-size: 20px;
-  padding-top: 0px;
 }
 
 h1 {
@@ -251,13 +251,29 @@ h3 {
   }
 }
 /*Estilos Home*/
-.p-filosofia {
-  font-weight: bold;
+section h1 {
+  /* position: absolute;*/
+  width: 100%;
+  height: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 9vw;
+  font-weight: 700;
+  line-height: 0.73em;
+  color: #555353;
+  background: #fb9797;
+  mix-blend-mode: multiply;
 }
 
-#beneficios {
-  display: block;
-  margin: 10px;
+section video {
+  position: absolute;
+  width: 100%;
+  height: 35%;
+  object-fit: cover;
 }
 
 .sectionContent {
@@ -265,10 +281,7 @@ h3 {
 }
 
 .imgSection {
-  margin-top: 50px;
-  margin-left: 10px;
-  margin-right: auto;
-  margin-bottom: 10px;
+  margin: 50px auto 10px 10px;
   width: 40%;
   border-radius: 15%;
   transition: all 1, 5s ease;
@@ -338,8 +351,13 @@ h3 {
     background-size: cover;
   }
 
+  .container {
+    margin-left: 0;
+  }
+
   .sectionContent {
     display: block;
+    padding-left: 0;
   }
 
   .asanas {
@@ -427,7 +445,7 @@ h3 {
 .fotoStaff:hover {
   width: 350px;
   height: 320px;
-  transform: rotate(360deg);
+  transform: perspective(450px);
 }
 
 /*Mixin*/
@@ -437,6 +455,12 @@ h3 {
   margin-top: 25px;
 }
 
+@media only screen and (max-width: 376px) {
+  #staffStyle {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
 /* Html FAQ*/
 .cardsFaqs {
   display: grid;
@@ -517,7 +541,7 @@ h3 {
 
 .btn-precio {
   background: #d83a56;
-  cursor: grab;
+  cursor: pointer;
   display: block;
   padding: 10px;
   color: beige;

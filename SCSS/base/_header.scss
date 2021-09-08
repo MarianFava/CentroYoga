@@ -3,6 +3,13 @@ header {
     display: flex;
     background-image: linear-gradient($color-acccollapsed,$color-bgmain);
 }
+.pIndex{
+    color:$color-tipografia ;
+    font-size: 18px;
+    padding-top: 0px;
+    text-decoration:none;
+}
+   
 .imagenLogo{
     display: flex;
     justify-content: left;

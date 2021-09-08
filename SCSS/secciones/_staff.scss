@@ -8,9 +8,16 @@
 .fotoStaff:hover {
     width: 350px;
     height: 320px;
-    transform: rotate(360deg);
+    transform:perspective(450px) /*rotate(360deg)*/;
 }
 /*Mixin*/
 #staffStyle{
     @include boxes (flex, space-around, 25px);
+}
+
+@media only screen and (max-width: 376px) {
+    #staffStyle{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
 }
