@@ -413,7 +413,6 @@ section video {
   }
 
   .imgSection {
-    /*height: 280px;*/
     width: 65%;
     display: grid;
     margin: auto;
@@ -429,8 +428,6 @@ section video {
   .imgSection {
     height: 350px;
     width: 250px;
-    /*display: grid;
-    margin: auto;*/
     object-fit: cover;
   }
 }
@@ -837,7 +834,7 @@ footer {
 
   footer {
     flex-direction: column;
-    width: 95%;
+    width: 100%;
   }
 
   .iconRedes {

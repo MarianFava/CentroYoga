@@ -110,7 +110,7 @@ section h1{
         grid-template-columns: 1fr;
         display: grid;
     }
-   .imgSection{
+    .imgSection{
     height: 200px;                    
     width: 35%;
     display: block;
@@ -146,7 +146,6 @@ section h1{
            
     }
     .imgSection{
-           /*height: 280px;*/
            width: 65%;
            display: grid;
            margin: auto;
@@ -162,8 +161,6 @@ section h1{
     .imgSection{
            height: 350px;
            width: 250px;
-           /*display: grid;
-           margin: auto;*/
            object-fit: cover;
     }
 }
