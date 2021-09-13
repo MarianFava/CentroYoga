@@ -2,6 +2,7 @@
 header { 
     display: flex;
     background-image: linear-gradient($color-acccollapsed,$color-bgmain);
+    width: 100%;
 }
 .pIndex{
     color:$color-tipografia ;
@@ -41,7 +42,7 @@ header {
     display: inline-block;
     color: #3d3c3c;
     justify-content: end;
-    background-color: #F4C7AB;
+    background-color: $color-bgbotonesnav;
     text-decoration:none;
     text-align:center;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;;
@@ -57,9 +58,6 @@ header {
 /*Responsive Header*/
 @media only screen and (max-width: 320px) {
     
-    header{
-        width: 100vh;
-    }
     .ul1{
         display: grid;
     }
@@ -77,9 +75,6 @@ header {
 }
 @media only screen and (max-width: 375px) {
     
-    header{
-        width: 125vh;
-    }
     .ul1 {
            display: grid;
     }
@@ -96,9 +91,7 @@ header {
     }
 }
 @media only screen and (max-width: 425px) {
-    header{
-        width: 125vh;
-    }
+    
     .ul1 {
            display: grid;
     }
@@ -115,9 +108,7 @@ header {
     }
 }
 @media only screen and ( max-width :768px) {
-    header{
-        width: 150vh;
-    }
+    
     .imagenLogo{
         display: flex;
         justify-content: left;

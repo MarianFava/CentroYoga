@@ -5,6 +5,28 @@
     grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-row-gap: 20px;
     margin-left: 30px;
+
+    @media only screen and (max-width: 320px) {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        margin-left: 10px;
+    }
+    @media only screen and (max-width: 375px) {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+    @media only screen and (max-width: 425px) {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        margin-left: 50px;
+    }
+    @media only screen and (max-width: 768px) {
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            grid-row-gap: 10px;
+            margin-left: 20px;
+    }
+
 }
 .card{
     background: $color-acccollapsed;
@@ -20,25 +42,4 @@
     border-radius: 15px;
     box-shadow: 10px 10px 10px  $color-bgbotonesnav;
 }
-@media only screen and (max-width: 376px) {
-    .cardsFaqs{
-        display:block;
-        /*grid-template-columns: 1fr;
-        
-        grid-row-gap: 10px;*/
-        margin-left: 20px;
-    }
-}
-@media only screen and (max-width: 768px) {
-    .cardsFaqs{
-        display: grid;
-        grid-template-columns: 1fr 1fr ;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-        grid-row-gap: 10px;
-        margin-left: 20px;
-    }
-    .card-body{
-        height: 260px;
-    }
-    
-}
+

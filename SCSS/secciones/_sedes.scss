@@ -1,12 +1,47 @@
 /*Html Sedes*/
 #sedes {
     @include boxes (flex, space-around);
+    @media only screen and (max-width: 320px) {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    @media only screen and (max-width: 375px) {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    @media only screen and (max-width: 425px) {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    @media only screen and (max-width: 768px) {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
    
 } 
 #sedes p {
     margin-bottom: 10px;
+
 }
 p.dire-aruy {
     color:$color-contactotipog;
     font-weight: lighter;
+}
+.sede{
+
+    margin-left: 15px;
+}
+.mapa{
+    width:450px; 
+    height:350px;
+    border:0;
+    @media only screen and (max-width: 320px) {
+        width: 300px;
+    }
+    @media only screen and (max-width: 375px) {
+        width: 300px;
+    }
+    @media only screen and (max-width: 425px) {
+        width: 350px;
+    }
 }

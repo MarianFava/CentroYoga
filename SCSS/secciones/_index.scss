@@ -1,44 +1,79 @@
 /*Estilos Home*/
-section h1{
-    /* position: absolute;*/
-     width: 100%;
-     height: 40%;
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     flex-direction: column;
-     text-transform: uppercase;
-     text-align: center;
-     font-size: 9vw;
-     font-weight: 700;
-     line-height: 0.73em;
-     color:rgb(85, 83, 83);
-     background: rgb(251, 151, 151);
-     mix-blend-mode: multiply;
+#videoH1 {
+    height: 212px;
+}
+#videoH1 > h1{
+ display: flex;
+    width: 100%;
+    min-height: 212px;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 7.5vw;
+    font-weight: 700;
+    line-height: 0.73em;
+    color:rgb(85, 83, 83);
+    background: rgb(251, 151, 151);
+    mix-blend-mode: multiply;
  }
- section video{
-     position: absolute;
-     width: 100%;
-     height: 35%;
-     object-fit: cover;
+#videoH1 > video{
+    display: flex;
+    position: absolute;
+    width: 100%;
+    max-height: 212px;
+    object-fit: cover;
  }
 .sectionContent{
      display: flex; 
+    
+     @media only screen and (max-width: 320px) {
+        display: block;
+        padding-left: 0;
+     }
+     @media only screen and ( max-width :768px) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+     }
 }
+.sectionContent:hover {
+    transform: translateX(400px) ;
+}
+
 .imgSection { 
     margin: 50px auto 10px 10px;
     width: 40%;
     border-radius: 15%;
     transition: all 1,5s ease;
+    @media only screen and (max-width: 320px) {
+        width: 100%;
+        margin: auto;
+    }
+    @media only screen and (max-width: 360px) {
+        height: 200px;                    
+        width: 35%;
+        display: block;
+        margin: auto;
+    }
+    @media only screen and (max-width: 425px) {
+        height: 250px;                    
+        display: block;
+        margin: auto;
+    }
+    @media only screen and ( max-width :768px) {
+        width: 65%;
+        display: grid;
+        margin: auto;
+        object-fit: cover;
+    }
 }  
-.sectionContent:hover {
-    transform: translateX(400px) ;
-}
+
 .listSection {
     text-shadow: 2px 2px 5px $color-letraprimario;
-    /*margin-left: 10px;
-    margin-top: 60px;
-    width: 60%;*/
     font-family: $fuentes;
     font-size: nth($font-size,6);
     padding-left: 35px;
@@ -52,15 +87,29 @@ section h1{
 }  
 .asanas{
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    /*Responsive*/
+    @media only screen and ( max-width :1024px) {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    @media only screen and ( max-width :768px) {
+        grid-template-columns: 1fr 1fr;
+    }
+    @media only screen and (max-width: 425px) {    
+        grid-template-columns: 1fr;
+    }
+    @media only screen and (max-width: 360px) {
+        grid-template-columns: 1fr;
+    }
+    @media only screen and (max-width: 320px) {
+        grid-template-columns: 1fr;
+    }
 }
 .asana {
     background-color: $color-bgprimario;
-    margin-top: 50px;
-    margin-left:10px;
-    margin-right: auto;
-    margin-bottom: 10px;
+    margin: 10px;
     border-radius: 15%;
+    max-width: 320px;
     overflow:hidden;
 }
 
@@ -68,7 +117,7 @@ section h1{
 .imgPosturas {
     border-radius: 15%;
     object-fit: cover;
-    width: 400px;
+    width: 100%;
     filter: grayscale(100%);
     transition: all 0.3s;
 
@@ -83,84 +132,4 @@ section h1{
     margin-left: 60px;
 }
 
-/*Responsive*/
 
-@media only screen and (max-width: 320px) {
-    .body{
-        background-size: cover;
-    }
-    .container{
-        margin-left: 0;
-    }
-    .sectionContent {
-        display: block;
-        padding-left: 0;
-    }
-    .asanas {
-        grid-template-columns: 1fr;
-        display: grid;
-    }
-    .imgSection{
-       width: 100%;
-       margin: auto;
-    }
-}
-@media only screen and (max-width: 360px) {
-    .asanas {
-        grid-template-columns: 1fr;
-        display: grid;
-    }
-    .imgSection{
-    height: 200px;                    
-    width: 35%;
-    display: block;
-    margin: auto;
-   }
-}
-@media only screen and (max-width: 425px) {
-    
-    .asanas {
-           grid-template-columns: 1fr;
-           display: grid;
-    }
-    .imgSection{
-           height: 250px;                    
-           display: block;
-           margin: auto;
-    }
-    
-}
-@media only screen and ( max-width :768px) {
-    .prueba{
-        padding-left: 2em;
-    }
-    .sectionContent{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
-    .asanas {
-        display: grid;   
-        grid-template-columns: 1fr 1fr;
-           
-    }
-    .imgSection{
-           width: 65%;
-           display: grid;
-           margin: auto;
-           object-fit: cover;
-    }
-}
-@media only screen and (max-width:1024px) {
-    
-    .asanas {
-           grid-template-columns: 3fr;
-           display: grid;
-    }
-    .imgSection{
-           height: 350px;
-           width: 250px;
-           object-fit: cover;
-    }
-}
