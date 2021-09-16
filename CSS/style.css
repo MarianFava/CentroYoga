@@ -512,17 +512,17 @@ main h3 {
     grid-template-columns: 1fr;
   }
 }
-@media only screen and (max-width: 375px) {
+@media screen and (min-width: 375px) {
   #clasesCards {
     grid-template-columns: 1fr;
   }
 }
-@media only screen and (max-width: 425px) {
+@media screen and (min-width: 425px) {
   #clasesCards {
     grid-template-columns: 1fr;
   }
 }
-@media only screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
   #clasesCards {
     grid-template-columns: 1fr 1fr 1fr;
   }
@@ -667,17 +667,17 @@ p.dire-aruy {
     width: 300px;
   }
 }
-@media only screen and (max-width: 375px) {
+@media screen and (min-width: 375px) {
   .contact_form {
     width: 350px;
   }
 }
-@media only screen and (max-width: 425px) {
+@media screen and (min-width: 425px) {
   .contact_form {
     width: 400px;
   }
 }
-@media only screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
   .contact_form {
     margin: 0 auto;
   }
