@@ -436,7 +436,7 @@ main h3 {
     margin-left: 12px;
   }
 }
-@media only screen and (max-width: 425px) {
+@media screen and (min-width: 425px) {
   #staffStyle {
     display: grid;
     grid-template-columns: 1fr;
@@ -589,6 +589,8 @@ main h3 {
   #sedes {
     display: grid;
     grid-template-columns: 1fr;
+    width: 300px;
+    margin-left: 20px;
   }
 }
 @media only screen and (max-width: 375px) {
@@ -630,7 +632,7 @@ p.dire-aruy {
 }
 @media only screen and (max-width: 320px) {
   .mapa {
-    width: 300px;
+    width: 275px;
   }
 }
 @media only screen and (max-width: 375px) {
@@ -944,17 +946,23 @@ footer {
 @media only screen and (max-width: 768px) {
   #redes {
     display: flex;
-    /* justify-content:space-between;*/
-    margin-right: 25px;
+    margin-right: 80px;
   }
 
   footer {
     flex-direction: column;
+    width: 100%;
   }
 
   .iconRedes {
     width: 20px;
     height: 20px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  #redes {
+    display: flex;
+    margin-right: 80px;
   }
 }
 

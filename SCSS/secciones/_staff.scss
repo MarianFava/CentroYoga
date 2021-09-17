@@ -28,7 +28,7 @@
         margin-left: 12px;
     }
 }
-@media only screen and (max-width: 425px) {
+@media screen and (min-width: 425px) {
     #staffStyle{
         display: grid;
         grid-template-columns: 1fr;

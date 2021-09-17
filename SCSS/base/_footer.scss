@@ -77,14 +77,20 @@ footer {
     
     #redes{
         display: flex;
-       /* justify-content:space-between;*/
-       margin-right: 25px;
+        margin-right: 80px;
     }
     footer{
         flex-direction: column;
+        width: 100%;
     }
     .iconRedes{
         width:20px;
         height: 20px;
+    }
+}
+@media only screen and (max-width: 1024px){
+    #redes{
+        display: flex;
+        margin-right: 80px;
     }
 }
